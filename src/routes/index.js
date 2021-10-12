@@ -20,6 +20,7 @@ router.use(
 
 router.get('/cursos', async (req, res) => {
     
+  res.send("probando rama development")
 }
 )
 
