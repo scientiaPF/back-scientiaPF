@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS Curse (
+  name VARCHAR(255) NOT NULL,
+
+);
+
+
