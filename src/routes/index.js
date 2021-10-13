@@ -15,11 +15,12 @@ router.use(
 // Configurar los routers
 // Ejemplo: router.use('/auth', authRouter);
 const userRouter = require('./User.js')
+const coursesRouter = require('./Cursos.js')
 
 
 
-router.use('/user', userRouter)
-
+router.use('/users', userRouter)
+router.use('/courses', coursesRouter)
 
 
 
