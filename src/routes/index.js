@@ -1,5 +1,5 @@
 const { Router } = require('express');
-const { Curso } = require('../db');
+const { Curso , User } = require('../db');
 const fetch = require('node-fetch');
 const cors = require('cors');
 // Importar todos los routers;
@@ -14,18 +14,13 @@ router.use(
   );
 // Configurar los routers
 // Ejemplo: router.use('/auth', authRouter);
+const userRouter = require('./user.js')
 
-//guardar datos desde api en nuestra base de datos
 
 
-router.get('/cursos', async (req, res) => {
-    
-  res.send("probando rama development")
-}
-)
+router.use('/user', userRouter)
 
 
 
 
-
-module.exports = router;
+module.exports = router
