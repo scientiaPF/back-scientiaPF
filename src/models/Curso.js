@@ -7,6 +7,25 @@ module.exports = (sequelize) => {
     name: {
       type: DataTypes.STRING,
       allowNull: false,
+    },
+    description:{ 
+      type: DataTypes.TEXT,
+      allowNull: false,
+    },
+    price:{
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    video:{
+      type: DataTypes.TEXT,
+      allowNull: false,
+    },
+    category: {
+      type: DataTypes.ARRAY(DataTypes.TEXT),
+      allowNull: false
     }
+
+
+
   });
 };
