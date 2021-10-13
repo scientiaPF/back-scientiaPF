@@ -14,7 +14,7 @@ router.use(
   );
 // Configurar los routers
 // Ejemplo: router.use('/auth', authRouter);
-const userRouter = require('./user.js')
+const userRouter = require('./User.js')
 
 
 
